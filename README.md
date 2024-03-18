@@ -29,10 +29,10 @@ git clone git@github.com:HarshTondak/ecommerce.git
 
 ## Deployment
 
-Github Repository: [Micro SaaS Capital Website](https://github.com/HarshTondak/ecommerce)
+Github Repository: [Micro SaaS Capital Website](https://github.com/HarshTondak/MicroSaaS)
 
 This website is hosted using: [Netlify](https://www.netlify.com/)
 
-Hosted Website link is: [Live Micro SaaS Capital Website](https://best-ecomm-site.netlify.app/)
+Hosted Website link is: [Live Micro SaaS Capital Website](https://micro-saas.netlify.app/)
 
 **Have fun building!** 🚀
