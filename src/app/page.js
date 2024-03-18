@@ -1,112 +1,151 @@
+import Accordian, { AccordianItem } from "@/components/Accordian";
 import Image from "next/image";
+
+export const metadata = {
+  title: "Micro SaaS Capital",
+};
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main
+      className="flex flex-col items-center justify-center mt-8 rounded-2xl m-2
+    sm:m-10 text-dark dark:text-white"
+    >
+      <div className="my-10 md:my-20 font-light flex flex-col items-center text-center">
+        <div className="text-5xl md:text-6xl lg:text-7xl w-full lg:w-3/4 px-2">
+          We <span className="font-medium">acquire</span>,{" "}
+          <span className="font-medium">build</span>, and{" "}
+          <span className="font-medium">grow</span> amazing software businesses.
+        </div>
+        <div className="text-5xl"></div>
+
+        <div className="text-2xl md:text-3xl mt-12 w-full lg:w-3/5">
+          We give founders wonderful exits with simple and fair terms, a fast
+          and stress-free process, and an awesome new home where your business
+          will continue to thrive.
         </div>
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="my-10 flex flex-col items-center text-center">
+        <div className="text-5xl sm:text-6xl lg:text-7xl font-medium">
+          What We Like
+        </div>
+
+        <div className="h-fit flex flex-col items-center justify-center my-8">
+          <Accordian className="max-w-lg">
+            <AccordianItem value="1" trigger="Valuable Products">
+              Like mission-critical tools or anything customers really value and
+              pay for directly.
+            </AccordianItem>
+            <AccordianItem value="2" trigger="Happy Customers">
+              Our single best measure of product quality and the raison
+              d&apos;être of any business.
+            </AccordianItem>
+            <AccordianItem value="3" trigger="Sustainable Growth">
+              Driven by a strong brand or community or other genuine organic
+              channels.
+            </AccordianItem>
+            <AccordianItem value="4" trigger="Recurring Revenues">
+              Like SaaS or similar subscription models built on long-term
+              customer relationships.
+            </AccordianItem>
+            <AccordianItem value="5" trigger="High Margins">
+              Like software or similar services with high automation,
+              efficiency, and productivity.
+            </AccordianItem>
+          </Accordian>
+        </div>
+
+        <div className="text-lg md:text-xl w-full md:w-3/4">
+          We typically focus on small, underappreciated SaaS businesses that
+          don&apos;t fit the criteria of traditional venture capital or private
+          equity.
+        </div>
       </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+      <div className="my-16 flex flex-col items-center text-center">
+        <div className="text-5xl sm:text-6xl lg:text-7xl font-medium">
+          Our Simple Process
+        </div>
+        <div className="flex flex-col justify-center items-center gap-5">
+          <div className="flex flex-col sm:flex-row mt-8 sm:mt-16 gap-4 sm:gap-10 items-center justify-center">
+            <div className="flex flex-row sm:flex-col justify-center items-center gap-2">
+              <div className="text-2xl sm:text-3xl">Response</div>
+              <div className="text-2xl sm:text-xl">
+                in <span className="font-medium sm:font-bold">24-48 hours</span>
+              </div>
+            </div>
+            <div>
+              <Image
+                src="/svgs/right.svg"
+                alt=""
+                width="32"
+                height="32"
+                className="rotate-90 sm:rotate-0 bg-white rounded-full border"
+              />
+            </div>
+            <div className="flex flex-row sm:flex-col justify-center items-center gap-2">
+              <div className="text-2xl sm:text-3xl">Offer</div>
+              <div className="text-2xl sm:text-xl">
+                in <span className="font-medium sm:font-bold">3-5 days</span>
+              </div>
+            </div>
+            <div>
+              <Image
+                src="/svgs/right.svg"
+                alt=""
+                width="32"
+                height="32"
+                className="rotate-90 sm:rotate-0 bg-white rounded-full border"
+              />
+            </div>
+            <div className="flex flex-row sm:flex-col justify-center items-center gap-2">
+              <div className="text-2xl sm:text-3xl">Closing</div>
+              <div className="text-2xl sm:text-xl">
+                in <span className="font-medium sm:font-bold">15-30 days</span>
+              </div>
+            </div>
+          </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+          <div className="text-lg sm:text-xl text-start w-full tracking-widest px-10 mt-5">
+            <div>
+              &#x2022; Efficient due-diligence process that respects
+              founders&apos; time.
+            </div>
+            <div className="mt-5">
+              &#x2022; Cash-upfront offers without complex terms.
+            </div>
+            <div className="mt-5">&#x2022; No in-person meetings.</div>
+          </div>
+        </div>
+      </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
+      <div className="my-16 flex flex-col items-center text-center">
+        <div className="text-5xl sm:text-6xl lg:text-7xl font-medium">
+          Our Promise
+        </div>
+        <div className="my-6 text-2xl sm:text-3xl capitalize">
+          The <span className="font-bold">best</span> founder experience,
+          period!
+        </div>
+        <div className="w-4/5 sm:w-3/5 tracking-wider">
+          <p className="mt-2 text-lg sm:text-xl border-b pb-2 rounded-xl">
+            We are <span className="font-semibold">prompt</span> and{" "}
+            <span className="font-semibold">focused</span> - we never waste
+            founders&apos; time.
           </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+          <p className="mt-10 text-lg sm:text-xl border-b pb-2 rounded-xl">
+            We are <span className="font-semibold">honest</span>,{" "}
+            <span className="font-semibold">upfront</span>, and{" "}
+            <span className="font-semibold">transparent</span> with our offers -
+            we mean what we say and are committed to following through.
           </p>
-        </a>
+          <p className="mt-10 text-lg sm:text-xl border-b pb-2 rounded-xl">
+            We build for the <span className="font-semibold">long-term</span>{" "}
+            with permanent capital - our holding period is forever (we do not
+            &quot;flip&quot;).
+          </p>
+        </div>
       </div>
     </main>
   );

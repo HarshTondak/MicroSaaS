@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Objective
 
-## Getting Started
+Recreate microsaascapital.com using NextJS.
 
-First, run the development server:
+- Make sure it works as a static export: https://nextjs.org/docs/app/building-your-application/deploying/static-exports
+
+- Add a dark-mode/light-mode toggle which you can design however you want.
+
+- Add a “Blog” page (landing page for blog posts) which you can design however you want. Use a lorem ipsum generator for content. You don’t need to design the individual blog post view (just the blog landing page which contains multiple posts).
+
+- Optional: Improve the design of the current landing page.
+
+## Solution
+
+- The assignment is done using `Next.js`.
+- Redesigned the website to look minimal as well as beautiful.
+- Added dark-mode/light-mode functionality. It first takes the system theme preference.
+- Created a Blog Landing page showing all the required information.
+- It is working properly for static export.
+- This website is completely responsive for all screen sizes.
+
+## Building the project
+
+Clone the Repository:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone git@github.com:HarshTondak/ecommerce.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deployment
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Github Repository: [Micro SaaS Capital Website](https://github.com/HarshTondak/ecommerce)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This website is hosted using: [Netlify](https://www.netlify.com/)
 
-## Learn More
+Hosted Website link is: [Live Micro SaaS Capital Website](https://best-ecomm-site.netlify.app/)
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**Have fun building!** 🚀
