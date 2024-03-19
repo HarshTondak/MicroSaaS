@@ -27,7 +27,7 @@ export default function Home() {
       </div>
 
       <div className="my-10 flex flex-col items-center text-center">
-        <div className="text-5xl sm:text-6xl lg:text-7xl font-medium">
+        <div className="text-3xl sm:text-4xl lg:text-5xl font-medium">
           What We Like
         </div>
 
@@ -64,7 +64,7 @@ export default function Home() {
       </div>
 
       <div className="my-16 flex flex-col items-center text-center">
-        <div className="text-5xl sm:text-6xl lg:text-7xl font-medium">
+        <div className="text-3xl sm:text-4xl lg:text-5xl font-medium">
           Our Simple Process
         </div>
         <div className="flex flex-col justify-center items-center gap-5">
@@ -107,24 +107,26 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="text-lg sm:text-xl text-start w-full tracking-widest px-10 mt-5">
-            <div>
-              &#x2022; Efficient due-diligence process that respects
+          <div className="text-lg sm:text-xl w-full tracking-wider px-10 mt-5">
+            <div className="leading-tight">
+              &#10003; Efficient due-diligence process that respects
               founders&apos; time.
             </div>
-            <div className="mt-5">
-              &#x2022; Cash-upfront offers without complex terms.
+            <div className="mt-5 leading-tight">
+              &#10003; Cash-upfront offers without complex terms.
             </div>
-            <div className="mt-5">&#x2022; No in-person meetings.</div>
+            <div className="mt-5 leading-tight">
+              &#10003; No in-person meetings.
+            </div>
           </div>
         </div>
       </div>
 
       <div className="my-16 flex flex-col items-center text-center">
-        <div className="text-5xl sm:text-6xl lg:text-7xl font-medium">
+        <div className="text-3xl sm:text-4xl lg:text-5xl font-medium">
           Our Promise
         </div>
-        <div className="my-6 text-2xl sm:text-3xl capitalize">
+        <div className="my-6 text-xl sm:text-2xl capitalize">
           The <span className="font-bold">best</span> founder experience,
           period!
         </div>

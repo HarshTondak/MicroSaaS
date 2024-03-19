@@ -14,8 +14,9 @@ const RecentBlogs = ({ blog }) => {
           alt=""
           width="718"
           height="404"
-          className=" aspect-[4/3] w-full h-full object-cover object-center 
-          group-hover:scale-110 transition-all duration-500 "
+          className="aspect-[4/3] w-full h-full object-cover object-center 
+          group-hover:scale-110 transition-all duration-500
+          rounded-xl border border-dark dark:border-white"
           sizes="(max-width: 640px) 100vw,(max-width: 1024px) 50vw, 33vw"
         />
       </Link>

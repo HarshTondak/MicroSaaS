@@ -70,7 +70,7 @@ const RecentPosts = () => {
         </Link>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-16 mt-16">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16 mt-16">
         {sample.map((blog, index) => {
           return (
             <article key={index} className="col-span-1 row-span-1 relative">

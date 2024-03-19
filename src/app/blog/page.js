@@ -4,7 +4,7 @@ import RecentPosts from "@/components/BlogPage/RecentPosts";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center">
+    <main className="flex flex-col items-center justify-center mt-3">
       <HomeCoverSection />
       <FeaturedPosts />
       <RecentPosts />

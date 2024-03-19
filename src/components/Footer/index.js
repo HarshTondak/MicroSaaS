@@ -8,14 +8,14 @@ const Footer = () => {
                 sm:m-10 flex flex-col items-center text-light dark:text-dark"
     >
       <h3
-        className="mt-16 font-bold text-center capitalize 
-                  text-2xl sm:text-3xl lg:text-4xl px-4"
+        className="mt-16 font-medium text-center capitalize 
+                  text-xl sm:text-2xl lg:text-3xl px-4"
       >
         Not sure if your business meets our criteria?
       </h3>
       <p
-        className="mt-5 px-4 text-center w-full sm:w-3/5 
-                    font-medium text-sm sm:text-base"
+        className="mt-5 px-4 text-center w-full sm:w-3/4 lg:w-2/3
+                    font-medium text-sm sm:text-base lg:text-lg"
       >
         Get in touch anyway - we&apos;ll let you know quickly, we&apos;re always
         happy to meet fellow founders, and we may connect you with partners we
@@ -24,17 +24,17 @@ const Footer = () => {
 
       <a
         href="mailto:hello@microsaascapital.com"
-        className="mt-6 w-fit flex items-stretch bg-light font-bold
-        dark:bg-dark p-2 sm:p-4 rounded-full mx04 text-black dark:text-white
+        className="mt-6 flex bg-light font-bold py-2 px-4 
+        dark:bg-dark rounded-full text-dark dark:text-white
         hover:scale-105 transition-all duration-300"
       >
         Get In Touch
       </a>
 
       <div
-        className="w-full mt-16 md:mt-24 relative font-medium border-t border-solid 
-         border-light py-10 px-8 flex flex-col md:flex-row items-center md:items-start 
-         justify-between gap-10 md:gap-0"
+        className="w-full mt-16 relative font-medium border-t border-solid 
+         border-light dark:border-dark py-14 px-8 flex flex-col md:flex-row 
+         items-center md:items-start justify-evenly gap-10 md:gap-0"
       >
         <div
           className="flex flex-col gap-2 justify-center items-center 
@@ -53,7 +53,7 @@ const Footer = () => {
           </a>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-10">
+        <div className="flex flex-col lg:flex-row items-start gap-10">
           <div
             className="flex flex-col gap-2 justify-center items-center 
                     md:items-start text-center md:text-start max-w-80"

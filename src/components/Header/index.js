@@ -4,8 +4,10 @@ import Logo from "./Logo";
 import { MoonIcon, SunIcon } from "../Icons";
 import { useThemeSwitch } from "../Hooks/useThemeSwitch";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
+  const path = usePathname();
   const [mode, setMode] = useThemeSwitch();
   const [click, setClick] = useState(false);
 
@@ -13,15 +15,15 @@ const Header = () => {
     setClick(!click);
   };
   return (
-    <header className="w-full p-4 sm:px-10 flex items-center justify-evenly sm:justify-between mt-2">
+    <header className="w-full p-5 sm:px-8 flex items-center justify-between mt-2">
       <Logo />
 
       <button
-        className="inline-block sm:hidden z-50"
+        className="inline-block sm:hidden z-50 cursor-pointer pr-4"
         onClick={toggle}
         aria-label="Hamburger Menu"
       >
-        <div className="w-6 cursor-pointer transition-all ease duration-300">
+        <div className="w-6 transition-all ease duration-300">
           <div className="relative">
             <span
               className="absolute top-0 inline-block w-full h-0.5 bg-dark 
@@ -59,23 +61,33 @@ const Header = () => {
       </button>
 
       <nav
-        className=" w-max py-3 px-6 sm:px-8 border border-solid border-dark 
+        className="py-3 px-6 sm:px-8 border border-solid border-dark 
         rounded-full font-bold capitalize items-center flex sm:hidden
         fixed top-6 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-50
-        transition-all ease duration-300"
+        transition-all ease duration-300 gap-8 dark:border-white"
         style={{
           top: click ? "1rem" : "-5rem",
         }}
       >
-        <Link href="/" className="mr-2">
+        <Link
+          href="/"
+          className={`hover:scale-105 transition-all duration-300 ${
+            path === "/" ? "underline" : ""
+          }`}
+        >
           Home
         </Link>
-        <Link href="/blog" className="mx-2">
+        <Link
+          href="/blog"
+          className={`hover:scale-105 transition-all duration-300 ${
+            path === "/blog" ? "underline" : ""
+          }`}
+        >
           Blog
         </Link>
         <button
           onClick={() => setMode(mode === "light" ? "dark" : "light")}
-          className={`w-6 h-6 ease ml-2 flex items-center justify-center rounded-full p-1 ${
+          className={`w-6 h-6 ease flex items-center justify-center rounded-full p-1 ${
             mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
           }`}
           aria-label="theme-switcher"
@@ -89,25 +101,29 @@ const Header = () => {
       </nav>
 
       <nav
-        className=" w-max py-3 px-8 border border-solid border-dark rounded-full 
+        className="py-3 px-8 border border-solid border-dark rounded-full 
         font-bold capitalize items-center hidden sm:flex fixed top-6 right-1/2 
-        translate-x-1/2 bg-light/80 backdrop-blur-sm z-50"
+        translate-x-1/2 bg-light/80 backdrop-blur-sm z-50 sm:gap-4 md:gap-8 lg:gap-10"
       >
         <Link
           href="/"
-          className="mr-2 hover:underline hover:scale-110 transition-all duration-300"
+          className={`hover:scale-105 transition-all duration-300 ${
+            path === "/" ? "underline" : ""
+          }`}
         >
           Home
         </Link>
         <Link
           href="/blog"
-          className="mx-2 hover:underline hover:scale-110 transition-all duration-300"
+          className={`hover:scale-105 transition-all duration-300 ${
+            path === "/blog" ? "underline" : ""
+          }`}
         >
           Blog
         </Link>
         <button
           onClick={() => setMode(mode === "light" ? "dark" : "light")}
-          className={`w-6 h-6 ease ml-2 flex items-center justify-center rounded-full p-1 ${
+          className={`w-6 h-6 ease flex items-center justify-center rounded-full p-1 ${
             mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
           }`}
           aria-label="theme-switcher"
@@ -124,7 +140,7 @@ const Header = () => {
         <a
           href="mailto:hello@microsaascapital.com"
           className="w-fit flex items-stretch bg-dark font-bold
-        dark:bg-light p-1 sm:p-3 rounded-full mx04 text-white dark:text-black
+        dark:bg-light py-2 px-4 rounded-full mx04 text-white dark:text-black
         hover:scale-105 transition-all duration-300"
         >
           Get In Touch
