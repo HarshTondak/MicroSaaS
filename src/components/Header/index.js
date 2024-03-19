@@ -18,47 +18,49 @@ const Header = () => {
     <header className="w-full p-5 sm:px-8 flex items-center justify-between mt-2">
       <Logo />
 
-      <button
-        className="inline-block sm:hidden z-50 cursor-pointer pr-4"
+      <div
         onClick={toggle}
+        className="inline-block sm:hidden z-50 cursor-pointer pr-4"
         aria-label="Hamburger Menu"
       >
-        <div className="w-6 transition-all ease duration-300">
-          <div className="relative">
-            <span
-              className="absolute top-0 inline-block w-full h-0.5 bg-dark 
+        <button>
+          <div className="w-6 transition-all ease duration-300">
+            <div className="relative">
+              <span
+                className="absolute top-0 inline-block w-full h-0.5 bg-dark 
               dark:bg-light rounded transition-all ease duration-200"
-              style={{
-                transform: click
-                  ? "rotate(-45deg) translateY(0)"
-                  : "rotate(0deg) translateY(6px)",
-              }}
-            >
-              &nbsp;
-            </span>
-            <span
-              className="absolute top-0 inline-block w-full h-0.5 bg-dark 
+                style={{
+                  transform: click
+                    ? "rotate(-45deg) translateY(0)"
+                    : "rotate(0deg) translateY(6px)",
+                }}
+              >
+                &nbsp;
+              </span>
+              <span
+                className="absolute top-0 inline-block w-full h-0.5 bg-dark 
               dark:bg-light rounded transition-all ease duration-200"
-              style={{
-                opacity: click ? 0 : 1,
-              }}
-            >
-              &nbsp;
-            </span>
-            <span
-              className="absolute top-0 inline-block w-full h-0.5 bg-dark 
+                style={{
+                  opacity: click ? 0 : 1,
+                }}
+              >
+                &nbsp;
+              </span>
+              <span
+                className="absolute top-0 inline-block w-full h-0.5 bg-dark 
               dark:bg-light rounded transition-all ease duration-200"
-              style={{
-                transform: click
-                  ? "rotate(45deg) translateY(0)"
-                  : "rotate(0deg) translateY(-6px)",
-              }}
-            >
-              &nbsp;
-            </span>
+                style={{
+                  transform: click
+                    ? "rotate(45deg) translateY(0)"
+                    : "rotate(0deg) translateY(-6px)",
+                }}
+              >
+                &nbsp;
+              </span>
+            </div>
           </div>
-        </div>
-      </button>
+        </button>
+      </div>
 
       <nav
         className="py-3 px-6 sm:px-8 border border-solid border-dark 

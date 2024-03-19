@@ -130,19 +130,28 @@ export default function Home() {
           The <span className="font-bold">best</span> founder experience,
           period!
         </div>
-        <div className="w-4/5 sm:w-3/5 tracking-wider">
-          <p className="mt-2 text-lg sm:text-xl border-b pb-2 rounded-xl">
-            We are <span className="font-semibold">prompt</span> and{" "}
-            <span className="font-semibold">focused</span> - we never waste
-            founders&apos; time.
-          </p>
-          <p className="mt-10 text-lg sm:text-xl border-b pb-2 rounded-xl">
+        <div className="w-4/5 sxl:w-3/4 tracking-wider grid md:grid-cols-2 grid-rows-2 gap-4">
+          <p
+            className="mt-2 text-lg sm:text-xl border p-5 rounded-lg
+          bg-white/90 text-dark col-span-2 row-span-1"
+          >
             We are <span className="font-semibold">honest</span>,{" "}
             <span className="font-semibold">upfront</span>, and{" "}
             <span className="font-semibold">transparent</span> with our offers -
             we mean what we say and are committed to following through.
           </p>
-          <p className="mt-10 text-lg sm:text-xl border-b pb-2 rounded-xl">
+          <p
+            className="text-lg sm:text-xl border p-5 rounded-lg
+          bg-white/90 text-dark col-span-2 sm:col-span-1 row-span-1"
+          >
+            We are <span className="font-semibold">prompt</span> and{" "}
+            <span className="font-semibold">focused</span> - we never waste
+            founders&apos; time.
+          </p>
+          <p
+            className="text-lg sm:text-xl border p-5 rounded-lg
+          bg-white/90 text-dark col-span-2 sm:col-span-1 row-span-1"
+          >
             We build for the <span className="font-semibold">long-term</span>{" "}
             with permanent capital - our holding period is forever (we do not
             &quot;flip&quot;).
